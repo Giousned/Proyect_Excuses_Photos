@@ -3,9 +3,11 @@ import "bootstrap";
 import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
+
 import "./assets/img/abuela.jpg";
 import "./assets/img/pajaro.jpg";
 import "./assets/img/perros.jpg";
+import "./assets/img/tortuga.jpg";
 
 import "./assets/img/4geeks.ico";
 
@@ -34,7 +36,21 @@ window.onload = function() {
   const texto =
     who[num1] + "" + action[num2] + " " + what[num3] + " " + when[num4];
 
-  const foto = (document.getElementById("foto").src = "./pajaro.jpg");
+  switch(num1){
+    case 0:
+      const fotoperro = (document.getElementById("foto").src = "./perros.jpg");
+      break;
+    case 1:
+      const fotoabuela = (document.getElementById("foto").src = "./abuela.jpg");
+      break;
+    case 2:
+      const fototortuga = (document.getElementById("foto").src = "./tortuga.jpg");
+      break;
+    case 3:
+      const fotopajaro = (document.getElementById("foto").src = "./pajaro.jpg");
+      break;
+  }
+
 
   // if (num1) {
   //   const foto = document.querySelector("src");
