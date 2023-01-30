@@ -55,7 +55,7 @@ window.onload = function() {
   const element = document.querySelector("#excuse");
   element.innerText = texto;
 
-  let refresh = document.getElementById("refresh");
+  let refresh = document.getElementById("refresh"); // COMO EL ID REFRESH ESTA EN EL BODY Y EN EL BOTON, PULSE EL BOTON O PULSE EL BODY SE ACTUALIZA
   refresh.addEventListener("click", () => {
     location.reload();
   });
