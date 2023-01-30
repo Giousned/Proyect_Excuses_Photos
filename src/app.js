@@ -34,9 +34,9 @@ window.onload = function() {
   const num4 = Math.floor(Math.random() * 5);
 
   const texto =
-    who[num1] + "" + action[num2] + " " + what[num3] + " " + when[num4];
+    who[num1] + " " + action[num2] + " " + what[num3] + " " + when[num4];
 
-  switch(num1){
+  switch (num1) {
     case 0:
       const fotoperro = (document.getElementById("foto").src = "./perros.jpg");
       break;
@@ -44,27 +44,35 @@ window.onload = function() {
       const fotoabuela = (document.getElementById("foto").src = "./abuela.jpg");
       break;
     case 2:
-      const fototortuga = (document.getElementById("foto").src = "./tortuga.jpg");
+      const fototortuga = (document.getElementById("foto").src =
+        "./tortuga.jpg");
       break;
     case 3:
       const fotopajaro = (document.getElementById("foto").src = "./pajaro.jpg");
       break;
   }
 
-
-  // if (num1) {
-  //   const foto = document.querySelector("src");
-  //   element.innerText =
-  //     /workspace/aaijllnsv - hello / src / assets / img / abuela.jpeg;
-  // }
-
   const element = document.querySelector("#excuse");
   element.innerText = texto;
 
-  // const element = document.getElementById("excuse");         ESTO FUNCIONA
-  // element.innerHTML = texto;
-
-  // document.querySelector();
-  // const element = document.getElementById();             PROBAR
-  // element.innerHTML =;
+  let refresh = document.getElementById("refresh");
+  refresh.addEventListener("click", () => {
+    location.reload();
+  });
 };
+
+// let refresh = document.getElementById("refresh");
+// refresh.addEventListener("click", _ => {                     // ESTO ESTA COPIADO DE INTERNET PERO MEJOR USAR PARENTESIS VACIO EN VEZ DE _
+//   location.reload();
+// });
+
+// document?.querySelector("#btn")?.addEventListener("click", () => {      // ESTO FUNCIONARIA SI TUVIERA UNA FUNCION QUE GENERASE
+//   theExcuse.innerHTML = generateExcuse();                              // EL CODIGO ALEATORIO CADA VEZ
+// });
+
+// const element = document.getElementById("excuse");             // ESTO FUNCIONA
+// element.innerHTML = texto;
+
+// document.querySelector();
+// const element = document.getElementById();                     // PROBAR
+// element.innerHTML =;
