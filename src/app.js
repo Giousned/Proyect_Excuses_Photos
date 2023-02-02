@@ -38,17 +38,17 @@ window.onload = function() {
 
   switch (num1) {
     case 0:
-      const fotoperro = (document.getElementById("foto").src = "./perros.jpg");
+      const fotoPerro = (document.getElementById("foto").src = "./perros.jpg");
       break;
     case 1:
-      const fotoabuela = (document.getElementById("foto").src = "./abuela.jpg");
+      const fotoAbuela = (document.getElementById("foto").src = "./abuela.jpg");
       break;
     case 2:
-      const fototortuga = (document.getElementById("foto").src =
+      const fotoTortuga = (document.getElementById("foto").src =
         "./tortuga.jpg");
       break;
     case 3:
-      const fotopajaro = (document.getElementById("foto").src = "./pajaro.jpg");
+      const fotoPajaro = (document.getElementById("foto").src = "./pajaro.jpg");
       break;
   }
 
